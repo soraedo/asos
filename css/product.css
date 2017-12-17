@@ -1,0 +1,203 @@
+html, body {
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#top {
+	position: fixed;
+	top: 40px;
+	left: 50px;
+	z-index: 10;
+}
+
+.links {
+	font-family: 'Times News Roman', serif;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.minor {
+	font-size: .8em;
+	margin-bottom: 10px;
+}
+
+#top a {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+#logo {
+	width: 150px;
+	position: relative;
+	top: 8px;
+	margin-right: 40px;
+}
+
+#nav {
+	position: fixed;
+	top: 135px;
+	left: 80px;
+	z-index: 10;
+}
+
+#navBot {
+	position: relative;
+	top: 50px;
+}
+
+#social {
+	position: fixed;
+	right: -47%;
+	-webkit-transform: rotate(90deg);
+	transform-origin: 0 0;
+	z-index: 10;
+}
+
+#social a {
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+#nav li:hover {
+	cursor: pointer;
+}
+
+ul {
+	position: relative;
+	font-weight: normal;
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+
+.hidden {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/** grid **/
+
+#gallery {
+	position: absolute;
+	top: 20%;
+	left: 18%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+}
+
+#big {
+	grid-column: 2 / span 2;
+	grid-row: 1 / span 2;
+	background-image: url(../imgs/front.jpg);
+	cursor: auto;
+}
+
+.single {
+	overflow: hidden;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#front {
+	background-image: url(../imgs/front.jpg);
+}
+
+#back {
+	background-image: url(../imgs/back.jpg);
+}
+
+#dyn {
+	background-image: url(../imgs/dyn.jpg);
+}
+
+#skirt8 {
+	background-image: url(../imgs/skirt8.jpg);
+}
+
+#video {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+	align-self: center;
+}
+
+#details {
+	margin-left: 10%;
+	grid-column: 4 / span 3;
+	grid-row: 1 / span 3;
+}
+
+.header{
+	font-size: 1.5em;
+}
+
+#details ul {
+	margin-top: 10px;
+	line-height: 1.4em;
+}
+
+#details li {
+	list-style-type: circle;
+}
+
+#details div {
+	margin-bottom: 30px;
+}
+
+.cost {
+	display: block;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+}
+
+select {
+	margin-top: 5px;
+	width: 34%;
+}
+
+.buy {
+	width: 29%;
+	background-color: #000;
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: thin;
+	transition: 0.5s;
+	border: solid black 2px;
+}
+
+.buy:hover {
+	background-color: white;
+	color: black;
+	border: black solid 2px;
+	transition: 0.5s;
+}
+
+video {
+	display: none;
+	width: 100%;
+	z-index: 10;
+}

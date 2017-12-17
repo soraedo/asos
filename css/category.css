@@ -1,0 +1,273 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#top {
+	position: fixed;
+	top: 40px;
+	left: 50px;
+	z-index: 10;
+}
+
+.links {
+	font-family: 'Times News Roman', serif;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.minor {
+	font-size: .8em;
+	margin-bottom: 10px;
+}
+
+#top a {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+#logo {
+	width: 150px;
+	position: relative;
+	top: 8px;
+	margin-right: 40px;
+}
+
+#nav {
+	position: fixed;
+	top: 135px;
+	left: 80px;
+	z-index: 10;
+}
+
+#navBot {
+	position: relative;
+	top: 50px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+ul {
+	position: relative;
+	font-weight: normal;
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+
+.hidden {
+	display: none;
+}
+
+#name {
+	position: fixed;
+	font-family: serif;
+	width: 100%;
+	left: 3%;
+	top: 40%;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 10em;
+	z-index: -1;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/** Filter**/
+
+#filter {
+	position: fixed;
+	right: -47%;
+	-webkit-transform: rotate(90deg);
+	transform-origin: 0 0;
+	z-index: 10;
+}
+
+#filter li {
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+	cursor: pointer;
+}
+
+#filter ul {
+	margin-left: 0px;
+}
+
+.style {
+	position: absolute;
+	-webkit-transform: rotate(-90deg);
+	transform-origin: center bottom;
+	top: -70px;
+	left: 11%;
+	padding: 20px 0 20px 20px;
+}
+
+#filter .style li {
+	text-align: right;
+	display: block;
+	margin: 0 10px 0 10px;
+	width: auto;
+	white-space: nowrap;
+}
+
+#brand {
+	left: 31%;
+}
+
+#size {
+	left: 56%;
+	top: -122px;
+}
+
+#color {
+	left: 77%;
+	top: -140px;
+}
+
+#black {
+	border-radius: 50%;
+	background-color: black;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px
+}
+
+#red {
+	border-radius: 50%;
+	background-color: red;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+}
+
+#white {
+	border-radius: 50%;
+	background-color: white;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+}
+
+#blue {
+	border-radius: 50%;
+	background-color: blue;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+}
+
+#yellow {
+	border-radius: 50%;
+	background-color: yellow;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+}
+
+#brown {
+	border-radius: 50%;
+	background-color: brown;
+	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+}
+
+#price {
+	left: 90%;
+}
+/**Category Grid**/
+
+#category {
+	position: absolute;
+	left: 18%;
+	top: 70%;
+	width: 70%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 1fr;
+	grid-column-gap: 100px;
+	grid-row-gap: 100px;
+	overflow: hidden;
+}
+
+.skirts {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#skirt1 {
+	background-image: url(../imgs/skirt1.jpg);
+}
+
+#skirt2 {
+	background-image: url(../imgs/skirt2.jpg);
+}
+
+#skirt3 {
+	background-image: url(../imgs/skirt3.jpg);
+}
+
+#skirt4 {
+	background-image: url(../imgs/skirt4.jpg);
+}
+
+#skirt5 {
+	background-image: url(../imgs/skirt5.jpg);
+}
+
+#skirt6 {
+	background-image: url(../imgs/skirt6.jpg);
+}
+
+#skirt7 {
+	background-image: url(../imgs/skirt7.jpg);
+}
+
+#skirt8 {
+	background-image: url(../imgs/skirt8.jpg);
+}
+
+#skirt9 {
+	background-image: url(../imgs/skirt9.jpg);
+}
+
+.overlay {
+	background-color: white;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 3em;
+	padding: 15px;
+}
+
+.skirts:hover .overlay{
+	opacity: 0.5;
+}
